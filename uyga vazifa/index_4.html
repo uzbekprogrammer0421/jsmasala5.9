@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Task-2</title>
+  <style>
+    #btn {
+      margin: 5px;
+      position: relative;
+      z-index: 0;
+      width: 160px;
+      color: crimson;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .3s;
+      -webkit-box-reflect: below 10px linear-gradient(transition, blue);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row my-3 offset-2 ">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" href="./index_3.html">DOM bilan qilingan 1-task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page " href="./index_4.html">DOM bilan qilingan 2-task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index_5.html">Vue js bilan qilingan 1-task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./index_6.html">Vue js bilan qilingan 2-task</a>
+        </li>
+      </ul>
+      <div class="col-md-8 mt-4" >
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>
+                T/R
+              </th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4 mt-4">
+        <div class="card">
+          <div class="card-body">
+            <form onsubmit="add_user(event)" id="form" >
+              <input type="text" placeholder="Name" class="form-control my-2" >
+              <input type="number" placeholder="Age" class="form-control my-2" >
+              <input type="tel" placeholder="Phone" class="form-control my-2" >
+              <input type="text" placeholder="Address" class="form-control my-2" >
+            </form>
+          </div>
+          <div class="card-footer">
+            <button type="submit" form="form" id="btn" >Add user</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main_4.js" ></script>
+</body>
+
+</html>
